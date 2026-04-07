@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Isooh Njaay</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js from CDN for a simple WebGL 3D scene -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Isooh Njaay</h1>
+    <p>Développeur Web Front-End</p>
+    <p class="tagline">Interfaces immersives, élégantes et performantes</p>
+    <!-- 3D hero container (WebGL canvas will be injected) -->
+    <div id="hero-3d" aria-hidden="true"></div>
+    <div class="header-controls">
+      <button id="toggle-theme" class="btn small" type="button">Mode clair</button>
+      <button id="toggle-3d" class="btn small" type="button">Pause 3D</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="section" data-parallax-speed="0.06">
+    <h2>À propos de moi</h2>
+    <div class="about-content">
+      <img src="Isooh.jpg" alt="Photo de profil de Isooh Njaay" class="profile-photo" />
+      <p>
+        Passionné par le développement web, je crée des interfaces modernes, rapides et accessibles.
+        Mon objectif est d’apporter des solutions simples et efficaces aux besoins numériques.
+      </p>
+    </div>
+    <div class="links">
+      <a href="CV Professionnel Ismaila Ndiaye.pdf" target="_blank" rel="noopener noreferrer" class="btn">📄 Voir mon CV</a>
+      <a href="https://github.com/ton-github" target="_blank" class="btn">💻 Mon GitHub</a>
+    </div>
+  </section>
+
+  <section id="projects" class="section" data-parallax-speed="0.09">
+    <h2>Mes Projets</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Projet 1</h3>
+        <p>Site vitrine pour une entreprise locale.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projet 2</h3>
+        <p>Application web de gestion des tâches.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projet 3</h3>
+        <p>Portfolio personnel en HTML, CSS et JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-parallax-speed="0.05">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:ton.email@example.com">ton.email@example.com</a></p>
+    <p>📱 <a href="tel:+221770000000">+221 77 000 00 00</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Isooh Njaay - Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
